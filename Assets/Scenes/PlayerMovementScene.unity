@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!20 &462747172 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3420205039205371399, guid: bec8f13ee3169424c8cbf691c2ba1d54, type: 3}
+  m_PrefabInstance: {fileID: 4304878527780251460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &569693135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3522309355606571501, guid: bec8f13ee3169424c8cbf691c2ba1d54, type: 3}
@@ -151,6 +156,21 @@ MonoBehaviour:
   speed: 7
   gravity: -18
   jumpHeight: 0.8
+--- !u!114 &569693143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569693135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6c3ed57db7d42408909e17d402c9ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerLook
+  cam: {fileID: 462747172}
+  xSensitivity: 30
+  ySensitivity: 30
 --- !u!1 &1169562674
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +816,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3522309355606571501, guid: bec8f13ee3169424c8cbf691c2ba1d54, type: 3}
       insertIndex: -1
       addedObject: {fileID: 569693141}
+    - targetCorrespondingSourceObject: {fileID: 3522309355606571501, guid: bec8f13ee3169424c8cbf691c2ba1d54, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 569693143}
   m_SourcePrefab: {fileID: 100100000, guid: bec8f13ee3169424c8cbf691c2ba1d54, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
