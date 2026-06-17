@@ -35,7 +35,7 @@ public class ObjectInteractor : MonoBehaviour
     {
         if (heldItem != null) return;
 
-        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        Ray ray = new(playerCamera.transform.position, playerCamera.transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hit, pickupRange, pickupLayer))
         {
@@ -106,7 +106,7 @@ public class ObjectInteractor : MonoBehaviour
             return;
         }
 
-        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        Ray ray = new(playerCamera.transform.position, playerCamera.transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hit, pickupRange, pickupLayer))
         {
